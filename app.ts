@@ -20,8 +20,14 @@ dotenv.config();
 // Create HTTP Server
 const app = express();
 // Cors
+// Allowed front-end origins, comma-separated in CLIENT_URL (e.g. "https://jobify.vercel.app,http://localhost:5173")
+const allowedOrigins = (
+  process.env.CLIENT_URL || 'https://jobify-e5da.onrender.com,http://localhost:5173'
+)
+  .split(',')
+  .map((origin) => origin.trim());
 const corsOptions: CorsOptions = {
-  origin: 'https://jobify-e5da.onrender.com',
+  origin: allowedOrigins,
   credentials: true,
 };
 app.use(cors(corsOptions));
