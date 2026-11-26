@@ -2,7 +2,7 @@
 
 REST API for **[Jobify](https://github.com/Abdel-Fadeel/Jobify)**, a job-application tracker. Built with **Node.js, Express and TypeScript**, using **MongoDB (Mongoose)**, JWT auth in HTTP-only cookies, and Cloudinary for avatar uploads.
 
-**Front end:** [Abdel-Fadeel/Jobify](https://github.com/Abdel-Fadeel/Jobify) · **Live app:** _coming soon_
+**Front end:** [Abdel-Fadeel/Jobify](https://github.com/Abdel-Fadeel/Jobify) · **Live app:** [jobify-peach-phi.vercel.app](https://jobify-peach-phi.vercel.app) (click "Explore the app") · **API:** `https://jobify-server-8qm8.onrender.com/api/v1`, hosted on Render's free tier, so the first request may take up to a minute.
 
 ## Features
 
